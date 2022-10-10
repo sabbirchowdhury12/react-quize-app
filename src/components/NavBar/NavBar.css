@@ -1,0 +1,23 @@
+nav a {
+    margin: 10px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: black;
+    color: white;
+
+}
+
+.active {
+    background: black;
+    color: white;
+}
+
+@media(max-width:767px) {
+    ul a {
+        display: block;
+    }
+}
