@@ -13,7 +13,7 @@ const Option = ({ option, correctAnswer }) => {
 
     return (
         <div className='m-2'>
-            <button onClick={() => alertClick(option)} className='p-2 bg-slate-300'>{option}</button>
+            <button onClick={() => alertClick(option)} className='p-2 bg-slate-100 w-3/4 font-medium rounded-lg'>{option}</button>
         </div>
     );
 };
