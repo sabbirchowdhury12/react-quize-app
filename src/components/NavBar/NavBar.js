@@ -16,7 +16,7 @@ const NavBar = () => {
                 <div>
                     <ul className={`bg-violet-800 w-full duration-1000 ease-linear top-14  ${open ? 'right-0' : 'right-[-800px]'} fixed sm:static`} >
                         <NavLink to='/'>Home</NavLink>
-                        <NavLink to='/statitic'>Statitic</NavLink>
+                        <NavLink to='/statitic'>Statistics</NavLink>
                         <NavLink to='/blog'>Blog</NavLink>
                         {/* <NavLink to='/service'>Service</NavLink>
                         <NavLink to='/about'>About</NavLink>

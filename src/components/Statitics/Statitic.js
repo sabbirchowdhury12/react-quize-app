@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Statitic = () => {
     const quizzes = useLoaderData().data;
@@ -12,6 +12,7 @@ const Statitic = () => {
             <LineChart data={quizzes}>
                 <Line type='monotone' dataKey="total" stroke='#82ca9d'>
                 </Line>
+                <CartesianGrid stroke="#ccc" />
                 <XAxis dataKey='name'>
                 </XAxis>
                 <YAxis></YAxis>
