@@ -7,6 +7,7 @@ import PlayQuiz from './components/PlayQuiz/PlayQuiz';
 import Statitic from './components/Statitics/Statitic';
 import Main from './Layout/Main';
 import 'react-toastify/dist/ReactToastify.css';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 
 const router = createBrowserRouter([
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: '/blog',
         element: <Blog></Blog>
+      },
+      {
+        path: '*',
+        element: <ErrorPage></ErrorPage>
       }
     ]
   }

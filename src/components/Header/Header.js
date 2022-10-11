@@ -8,7 +8,7 @@ const Header = () => {
             <div className='text-white text-center'>
                 <h2 className='text-2xl font-bold '>Play Quiz and Develop Your Knowledge</h2>
                 <p className='my-4'>Quizzes have many benefits. It will increase your knowledge and help you learn many things.</p>
-                <button className='p-2 bg-violet-900 rounded '>Get Started</button>
+                <button className='py-2 px-4 bg-violet-900 rounded hover:bg-violet-800 '>Get Started</button>
             </div>
         </div>
     );

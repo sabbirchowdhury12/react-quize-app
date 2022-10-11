@@ -19,7 +19,7 @@ const Quiz = ({ quize }) => {
 
             </div>
             <Link to={`quiz/${id}`}>
-                <button onClick={handleClickToPlay} className='bg-violet-900 font-bold text-xl w-full py-2 rounded text-white'>Play</button>
+                <button onClick={handleClickToPlay} className='bg-violet-900 font-bold text-xl w-full py-2 rounded text-white hover:bg-violet-800'>Play</button>
             </Link>
         </div>
     );
