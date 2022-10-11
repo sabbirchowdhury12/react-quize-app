@@ -4,6 +4,7 @@ import './App.css';
 import Blog from './components/Blog/Blog';
 import Home from './components/Home/Home';
 import PlayQuiz from './components/PlayQuiz/PlayQuiz';
+import Statitic from './components/Statitics/Statitic';
 import Main from './Layout/Main';
 
 
@@ -25,6 +26,11 @@ const router = createBrowserRouter([
           return fetch(` https://openapi.programming-hero.com/api/quiz/${params.quizId}`);
         },
         element: <PlayQuiz></PlayQuiz>
+      },
+      {
+        path: '/statitic',
+        loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
+        element: <Statitic></Statitic>
       },
       {
         path: '/blog',
