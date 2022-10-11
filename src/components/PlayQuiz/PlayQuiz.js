@@ -11,12 +11,13 @@ const PlayQuiz = () => {
 
 
     return (
-        <div className='my-10 p-2  w-full md:w-3/4 mx-auto'>
+        <div className=' my-10 p-2  w-full md:w-3/4 mx-auto'>
             <h2 className='text-3xl font-bold text-center my-5'>{name} Quizzes</h2>
             <div>
                 {
                     questions.map(question => <QuizQuestion key={question.id} ques={question}></QuizQuestion>)
                 }
+
             </div>
 
         </div>
