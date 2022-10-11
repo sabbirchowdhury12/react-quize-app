@@ -7,12 +7,18 @@ const PlayQuiz = () => {
 
     const quizes = quizesData.data;
 
+    const { id, logo, name, questions, total } = quizes;
+
 
     return (
         <div>
-            {
-                quizes.map(quize => <QuizQuestion></QuizQuestion>)
-            }
+            <h2 className='text-3xl font-bold text-center m-3'>{name}</h2>
+            <div>
+                {
+                    questions.map(question => <QuizQuestion key={question.id} ques={question}></QuizQuestion>)
+                }
+            </div>
+
         </div>
     );
 };
