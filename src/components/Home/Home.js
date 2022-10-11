@@ -9,10 +9,12 @@ const Home = () => {
     return (
         <div>
             <Header></Header>
-            <div className='grid grid-cols-1 md:grid-cols-2  gap-20 m-4'>
-                {
-                    quizes.map(quize => <Quiz key={quize.id} quize={quize}></Quiz>)
-                }
+            <div className='bg-violet-100'>
+                <div className='grid grid-cols-1  gap-10 md:grid-cols-2 p-2  py-10 sm:px-14 lg:w-3/4 lg:mx-auto'>
+                    {
+                        quizes.map(quize => <Quiz key={quize.id} quize={quize}></Quiz>)
+                    }
+                </div>
             </div>
         </div>
     );

@@ -14,7 +14,7 @@ const NavBar = () => {
                 </div>
 
                 <div>
-                    <ul className={`bg-violet-800 w-full duration-1000 ease-linear top-14  ${open ? 'right-0' : 'right-[-800px]'} fixed md:static`} >
+                    <ul className={`bg-violet-800 w-full duration-1000 ease-linear top-14  ${open ? 'right-0' : 'right-[-800px]'} fixed sm:static`} >
                         <NavLink to='/'>Home</NavLink>
                         <NavLink to='/statitic'>Statitic</NavLink>
                         <NavLink to='/blog'>Blog</NavLink>
@@ -24,7 +24,7 @@ const NavBar = () => {
                     </ul>
                 </div>
 
-                <div onClick={() => setOpen(!open)} className="h-7 w-7 md:hidden text-white">
+                <div onClick={() => setOpen(!open)} className="h-7 w-7 sm:hidden text-white">
                     {
                         open ? <XMarkIcon /> : <Bars3Icon />
                     }
