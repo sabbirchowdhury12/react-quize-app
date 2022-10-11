@@ -10,7 +10,7 @@ const NavBar = () => {
             <nav className='flex items-center justify-between p-5 bg-slate-300  w-full'>
 
                 <div className="logo">
-                    <h2 className='font-bold text-2xl'>SA <span className='text-green-800'>CHOWDHURY</span></h2>
+                    <h2 className='font-bold text-2xl'>Daily <span className='text-green-800'>Quizzes</span></h2>
                 </div>
 
                 <div>
