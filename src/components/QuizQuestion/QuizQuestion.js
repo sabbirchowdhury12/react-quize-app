@@ -4,7 +4,7 @@ import Option from '../Option/Option';
 
 const QuizQuestion = ({ ques }) => {
     // console.log(ques);
-    const { id, question, correctAnswer, options } = ques;
+    const { question, correctAnswer, options } = ques;
     // console.log(options);
 
     return (

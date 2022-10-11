@@ -1,19 +1,13 @@
 nav a {
-    margin: 10px;
+    margin: 20px;
     font-weight: bold;
-    padding: 10px;
     border-radius: 5px;
+    color: white;
+    font-size: 18px;
 }
 
 nav a:hover {
-    background: black;
-    color: white;
-
-}
-
-.active {
-    background: black;
-    color: white;
+    color: rgb(196 181 253);
 }
 
 @media(max-width:767px) {
