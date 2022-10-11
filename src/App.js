@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import PlayQuiz from './components/PlayQuiz/PlayQuiz';
 import Statitic from './components/Statitics/Statitic';
 import Main from './Layout/Main';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const router = createBrowserRouter([

@@ -1,13 +1,16 @@
 import { EyeIcon } from '@heroicons/react/24/solid';
 import React from 'react';
 import Option from '../Option/Option';
+import { ToastContainer, toast } from 'react-toastify';
 
 
 
 const QuizQuestion = ({ ques }) => {
+
     // console.log(ques);
     const { question, correctAnswer, options } = ques;
     // console.log(options);
+    const notify = () => toast.info(`Correct answer is: ${correctAnswer}`, { position: 'top-center', theme: 'dark' });
 
     return (
         <div className='relative my-10 mx-2 text-center shadow-lg rounded bg-violet-900 p-8	'>
@@ -19,7 +22,8 @@ const QuizQuestion = ({ ques }) => {
                     options.map((option, ind) => <Option correctAnswer={correctAnswer} key={ind} option={option}></Option>)
                 }
             </div>
-            <button> <EyeIcon className="absolute top-2  right-4 text-white h-7 w-7"></EyeIcon></button>
+            <button onClick={notify}> <EyeIcon className="absolute top-2  right-4 text-white h-7 w-7"></EyeIcon></button>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

@@ -6,7 +6,7 @@ import './NavBar.css';
 const NavBar = () => {
     const [open, setOpen] = useState(false);
     return (
-        <div className='sticky top-0'>
+        <div>
             <nav className='flex items-center justify-between p-5 bg-violet-800 w-full'>
 
                 <div className="logo">
