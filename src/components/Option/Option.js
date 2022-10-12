@@ -19,7 +19,10 @@ const Option = ({ option, correctAnswer }) => {
 
     return (
         <div className='m-2'>
-            <button onClick={() => alertClick(option)} className='p-2 bg-slate-100 w-3/4 font-medium rounded-lg'>{option}</button>
+            <button onClick={() => alertClick(option)} className='p-2 bg-slate-100 w-3/4 font-medium rounded-lg'>
+                <input type="radio" name='same' />
+                <label htmlFor="" className='ml-1'>{option}</label>
+            </button>
             <ToastContainer></ToastContainer>
         </div>
 

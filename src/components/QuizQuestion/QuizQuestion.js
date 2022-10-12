@@ -7,9 +7,9 @@ import { ToastContainer, toast } from 'react-toastify';
 
 const QuizQuestion = ({ ques }) => {
 
-    // console.log(ques);
+
     const { question, correctAnswer, options } = ques;
-    // console.log(options);
+
     const notify = () => toast.info(`Correct answer is: ${correctAnswer}`, { position: 'top-center', theme: 'dark' });
 
     return (
@@ -22,7 +22,7 @@ const QuizQuestion = ({ ques }) => {
                     options.map((option, ind) => <Option correctAnswer={correctAnswer} key={ind} option={option}></Option>)
                 }
             </div>
-            <button onClick={notify}> <EyeIcon className="absolute top-2  right-4 text-white h-7 w-7"></EyeIcon></button>
+            <button onClick={notify}> <EyeIcon className="absolute top-2  right-4 text-white h-6 w-6"></EyeIcon></button>
             <ToastContainer></ToastContainer>
         </div>
     );

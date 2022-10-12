@@ -6,8 +6,10 @@ const PlayQuiz = () => {
     const quizesData = useLoaderData();
 
     const quizes = quizesData.data;
+    console.log(quizes);
 
     const { name, questions } = quizes;
+
 
 
     return (
