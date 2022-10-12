@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../img/images.jfif';
+import img from '../../img/images.jpg';
 
 const Header = () => {
     return (
